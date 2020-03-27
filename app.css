@@ -1,5 +1,171 @@
+@font-face {
+    font-family: LeagueSpartanBold;
+    src: url(/fonts/LeagueSpartan-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     width: 100%;
     height: 100%;
     background-color: #000000;
+    color: #FFF;
+    text-align: center;
+    font-family: "LeagueSpartanBold";
+    overflow: hidden;
+}
+
+#container {
+    width: 934px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 76px;
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 176px;
+    width: 174px;
+}
+
+article {
+    font-size: 4.5em;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+.show-mobile {
+    display: inline-block;
+}
+
+.show-desktop {
+    display: none;
+}
+
+article p {
+    padding-top: 5px;
+}
+
+article .highlight {
+    background-image: linear-gradient(#f85232, #e00f5f);
+    padding: 0 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    font-size: 3em;
+    width: 934px;
+    margin: 0;
+}
+
+.social-icons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.icon-item {
+    display: inline-block;
+}
+
+.icon-item + .icon-item {
+    margin-left: 30px;
+}
+
+.icon-item img {
+    height: 70px;
+    width: 70px;
+}
+
+@media only screen and (min-width: 1024px) {
+    #container {
+        padding-top: 50px;
+    }
+
+    .logo img {
+        width: 103px;
+        height: 103px;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+
+    .show-desktop {
+        display: inline-block;
+    }
+
+    article {
+        font-size: 4.3em;
+        padding-top: 50px;
+    }
+
+    article h1, article p {
+        margin: 30px;
+        padding: 0px;
+    }
+
+    footer {
+        font-size: 2em;
+    }
+
+    .icon-item img {
+        height: 31px;
+        width: 31px;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    #container {
+        width: 1024px;
+    }
+
+    article {
+        font-size: 2em;
+        padding-top: 50px;
+    }
+
+    article h1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .coming-soon-text.show-mobile {
+        display: inline-block;
+    }
+
+    .coming-soon-text.show-desktop {
+        display: none;
+    }
+
+    footer {
+        width: 1024px;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .coming-soon-text.show-desktop {
+        height: 158px;
+        width: 1493px;
+    }
+
+    #container {
+        width: 1493px;
+    }
+
+    article {
+        font-size: 4em;
+    }
+
+    footer {
+        width: 1493px;
+    }
 }
