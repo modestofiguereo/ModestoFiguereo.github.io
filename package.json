@@ -1,0 +1,33 @@
+{
+  "name": "tumbao-latino-coming-soon",
+  "version": "1.0.0",
+  "description": "Coming soon landing page for Tumbao Latino",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModestoFiguereo/tumbao-latino-coming-soon.git"
+  },
+  "keywords": [
+    "dance",
+    "salsa",
+    "bachata",
+    "kizomba",
+    "merengue",
+    "hiphop",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Modesto Figuereo <modesto@tumbaolatino.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ModestoFiguereo/tumbao-latino-coming-soon/issues"
+  },
+  "homepage": "https://github.com/ModestoFiguereo/tumbao-latino-coming-soon#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
+}
